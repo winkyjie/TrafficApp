@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_listview_text"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_ri_imagepath"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_ri_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@id/iv_ri_imagepath"
+        android:textColor="#727272"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ri_title"
+        android:layout_toRightOf="@id/iv_ri_imagepath"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/headphone" />
+
+        <TextView
+            android:id="@+id/tv_ri_replycount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ri_createdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="2dp"
+        android:layout_toRightOf="@id/tv_ri_title"
+        android:paddingTop="8dp"
+        android:textColor="@color/name_text"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_ri_laba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_ri_title"
+        android:background="@drawable/re_laba"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="matrix"
+        android:src="@drawable/mm_submenu" />
+
+</RelativeLayout>

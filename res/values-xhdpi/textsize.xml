@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- chat.xml -->
+    <dimen name="chat_img_btn_wh">40dp</dimen>
+    <dimen name="chat_img_btn_maring_tb">5dp</dimen>
+    <dimen name="chat_edittext_margin_top">7dp</dimen>
+    <dimen name="chat_send_btn_width">60dp</dimen>
+    <dimen name="chat_send_btn_textxize">15dp</dimen>
+   	<dimen name="chat_ll_expression_height">275dp</dimen>
+   	<dimen name="chat_vp_id_height">235dp</dimen>
+   	<dimen name="chat_dot_wh">6dp</dimen>
+   	<dimen name="chat_dot_margin_lr">5dp</dimen>
+   	<dimen name="chat_expression_wh">27dp</dimen>
+   	<dimen name="chat_edittext_size">17dp</dimen>
+   	<dimen name="chat_gv_padding_lr">5dp</dimen>
+   	<dimen name="chat_gv_padding_bt">10dp</dimen>
+   	<dimen name="chat_gv_spacing">20dp</dimen>
+    <dimen name="chat_expression_columns">7dp</dimen>
+    <dimen name="chat_expression_rows">3dp</dimen>
+    <dimen name="chat_vp_marginTop">20dp</dimen>
+    <!-- expression_list_item.xml -->
+    <dimen name="expression_list_item_iv_wh">30dp</dimen>
+    
+    <!-- chat_msg_listview_item.xml -->
+    <dimen name="chat_msg_listview_item_send_time_h">20dp</dimen>
+    <dimen name="chat_msg_listview_item_send_time_textsize">13dp</dimen>
+    <dimen name="chat_msg_listview_item_main_margin">5dp</dimen>
+    <dimen name="chat_msg_listview_item_face_wh">50dp</dimen>
+    <dimen name="chat_msg_listview_item_msg_textsize">12dp</dimen>
+    <dimen name="chat_msg_listview_item_msg_textsize_true">15sp</dimen>
+    
+    <dimen name="ViewFlow_height">80dp</dimen>
+    <dimen name="main_marginTop">15dp</dimen>
+    <dimen name="main_item_textsize">15sp</dimen>
+    <dimen name="main_title_textsize">20sp</dimen>
+    <dimen name="main_title_marginTop">10dp</dimen>
+    <dimen name="main_title_marginBottom">10dp</dimen>
+    <dimen name="item_newmain_marginTop">3dp</dimen>
+    <dimen name="newmain_gridview_horizontalSpacing">5dp</dimen>
+    <dimen name="newmain_gridview_verticalSpacing">15dp</dimen>
+    <dimen name="newmain_main_gridview_verticalSpacing">20dp</dimen>
+    
+    <dimen name="login_button_register_height">40dp</dimen>
+    <dimen name="login_button_register_margin">20dp</dimen>
+    
+    <dimen name="item_cnews_marginLeft">8dp</dimen>
+    <dimen name="item_cnews_marginTop">12dp</dimen>
+    <dimen name="item_cnews_marginBottom">12dp</dimen>
+    <dimen name="item_cnews_textSize">15sp</dimen>
+    <dimen name="item_cnews_lineSpacingExtra">2dp</dimen>
+    <dimen name="item_pnews_height">190dp</dimen>
+    <dimen name="item_pnews_textSize">16sp</dimen>
+    <dimen name="item_pnews_lineSpacingExtra">2dp</dimen>
+    <dimen name="item_huodong_top_height">150dp</dimen>
+    <dimen name="item_huodong_top_padding">5dp</dimen>
+    <dimen name="item_huodong_top_textSize">16sp</dimen>
+    <dimen name="item_huodong_top_lineSpacingExtra">2dp</dimen>
+    <dimen name="item_huodong_list_textSize">16sp</dimen>
+    <dimen name="item_huodong_list_lineSpacingExtra">2dp</dimen>
+    <dimen name="item_huodong_list_marginTop">22dp</dimen>
+    <dimen name="item_huodong_list_marginBottom">25dp</dimen>
+    <dimen name="item_huodong_list_paddingTop">8dp</dimen>
+    
+    <dimen name="activity_pinglun_height">200dp</dimen>
+    <dimen name="activity_pinglun_marginLeft">20dp</dimen>
+    <dimen name="activity_pinglun_horizontalSpacing">5dp</dimen>
+    
+    <dimen name="activity_pinglun_news_height">100dp</dimen>
+    <dimen name="activity_pinglun_news_marginLeft">10dp</dimen>
+    
+    <dimen name="activity_about_textSize">14sp</dimen>
+    <dimen name="activity_about_marginLeft">20dp</dimen>
+    <dimen name="activity_about_marginTop">16dp</dimen>
+    
+    <dimen name="listview_photo_size">65dp</dimen>
+    
+</resources>

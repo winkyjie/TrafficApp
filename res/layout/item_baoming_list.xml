@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@color/setting_bg"
+    >
+ 
+ <RelativeLayout 
+     android:id="@+id/rl_baoming"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="2dp"
+	 android:layout_marginLeft="2dp"
+	 android:padding="8dp"
+     >
+
+ <TextView 
+    android:id="@+id/tv_baoming_content"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="1dp"
+    android:layout_marginBottom="3dp"
+    android:layout_alignParentRight="true"
+    android:textSize="15sp"
+    android:lineSpacingExtra="2dp"
+    android:textColor="@color/name_text"
+    android:typeface="serif"
+    />
+ <TextView 
+    android:id="@+id/tv_baoming_createtime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_baoming_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10dp"
+    android:textSize="12sp"
+    android:textColor="#a5a5a5"
+    android:visibility="visible"
+    />
+ 
+ </RelativeLayout>
+</RelativeLayout>

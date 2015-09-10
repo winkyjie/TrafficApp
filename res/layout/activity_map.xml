@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    
+    <cn.fszt.trafficapp.ui.activity.MyLocationMapView 
+        android:id="@+id/bmapsView"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    android:clickable="true"     
+	/>
+
+     <EditText 
+         android:id="@+id/et_search"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/map_search"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="10dp"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="10dp"
+         android:textColor="#a3a3a2"
+         android:paddingLeft="3dp"
+         android:singleLine="true"
+         />
+     
+     <ImageView
+         android:id="@+id/btn_search"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="155dp"
+         android:layout_marginTop="12dp"
+         android:layout_alignParentTop="true"
+         android:background="@drawable/btn_search"
+         />
+     
+    
+     <Button
+         android:id="@+id/btn_tuli"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginLeft="20dp"
+         android:layout_marginBottom="30dip"
+         android:clickable="true" android:onClick="toSecond" 
+         android:visibility="gone" />  
+         
+     <ImageView
+         android:id="@+id/btn_big"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:background="@drawable/btn_zoomjia" 
+         android:visibility="gone" />
+
+     <ImageView
+         android:id="@+id/btn_small"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="15dp"
+         android:layout_toLeftOf="@id/btn_big"
+         android:layout_marginRight="15dp"
+         android:layout_alignParentBottom="true"
+         android:background="@drawable/btn_zoomjian" 
+         android:visibility="gone" />
+
+     
+     
+     
+     
+     
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentBottom="true"
+         android:layout_margin="1dp"
+         >
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:background="@color/white"
+         android:layout_weight="1"
+         >
+         <ImageView 
+             android:layout_width="25dp"
+             android:layout_height="3dp"
+             android:background="@color/baidumap_changtong"
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:text="畅通"
+             />
+     </LinearLayout>
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:background="@color/white"
+         android:layout_weight="1"
+         android:layout_marginLeft="1dp"
+         >
+         <ImageView 
+             android:layout_width="25dp"
+             android:layout_height="3dp"
+             android:background="@color/baidumap_huanman"
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:text="缓慢"
+             />
+     </LinearLayout>
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:background="@color/white"
+         android:layout_weight="1"
+         android:layout_marginLeft="1dp"
+         >
+         <ImageView 
+             android:layout_width="25dp"
+             android:layout_height="3dp"
+             android:background="@color/baidumap_zuse"
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:text="拥堵"
+             />
+     </LinearLayout>
+     <LinearLayout 
+         android:id="@+id/ll_small"
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:background="@color/white"
+         android:layout_weight="1"
+         android:layout_marginLeft="1dp"
+         android:clickable="true"
+         >
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/btn_zoomjian"
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="4dp"
+             android:text="缩小"
+             />
+     </LinearLayout>
+      <LinearLayout 
+         android:id="@+id/ll_big"
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:background="@color/white"
+         android:layout_weight="1"
+         android:layout_marginLeft="1dp"
+         android:clickable="true"
+         >
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/btn_zoomjia"
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="4dp"
+             android:text="放大"
+             />
+     </LinearLayout>
+     </LinearLayout>
+     
+</RelativeLayout>

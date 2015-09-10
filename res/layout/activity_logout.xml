@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+     >
+    
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E75735" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_lo_logout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bt_nobgd"
+                android:textColor="#585858"
+                android:textSize="16sp"
+                android:text="退出登录" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f3f3f3" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bt_nobgd"
+            android:textColor="#585858"
+            android:textSize="16sp"
+            android:text="取消" />
+    </LinearLayout>
+    
+    
+</RelativeLayout>

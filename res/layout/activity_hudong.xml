@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    
+<RelativeLayout 
+    android:id="@+id/rl_hud_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+ <ImageView 
+     android:id="@+id/iv_ra_bhead"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/ra_bhead"
+     android:layout_marginTop="20dp"
+     android:layout_marginLeft="15dp"
+     />
+ <TextView 
+     android:id="@+id/tv_hud_pgname"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="16sp"
+     android:textStyle="bold"
+     android:textColor="#000000"
+     android:layout_toRightOf="@id/iv_ra_bhead"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="18dp"
+     />
+ <RelativeLayout 
+     android:layout_width="75dp"
+     android:layout_height="95dp"
+     android:layout_below="@id/iv_ra_bhead"
+     android:layout_marginTop="10dp"
+     android:layout_marginLeft="15dp"
+     >
+      <ImageView 
+          android:id="@+id/iv_hud_head"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_marginLeft="4dp"
+          android:layout_marginRight="4dp"
+          android:layout_marginTop="3dp"
+          android:layout_marginBottom="24dp"
+          android:background="@drawable/default_image"
+          />
+      <ImageView 
+     android:id="@+id/iv_ra_zhead"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/ra_zhead"
+     />
+      <TextView 
+          android:id="@+id/tv_hud_djname"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="12sp"
+          android:layout_alignBottom="@id/iv_ra_zhead"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="4dp"
+          android:textColor="#727272"
+          />
+     
+ </RelativeLayout>
+    
+</RelativeLayout>
+
+	<cn.fszt.trafficapp.widget.PullDownView
+        android:id="@+id/pd_hud"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_hud_bg"
+        />
+	<ProgressBar 
+	    android:id="@+id/pb_hud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/myProgressBarStyleLarge"
+        android:indeterminateDuration="700"
+        />
+</RelativeLayout>

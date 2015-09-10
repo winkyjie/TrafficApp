@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/item_hd_tonews"
+          android:title="@string/n_zixun"
+          android:showAsAction="always|withText" 
+          android:visible="false"/>
+    
+    <item android:id="@+id/item_hd_all"
+          android:title="@string/item_hd_all"
+          android:showAsAction="never|withText" />
+    
+    <item android:id="@+id/item_hd_general"
+          android:title="@string/item_hd_general"
+          android:showAsAction="never|withText" />
+    
+    <item android:id="@+id/item_hd_important"
+          android:title="@string/item_hd_important"
+          android:showAsAction="never|withText" />
+    
+    
+	<item android:id="@+id/item_hd_vote"
+          android:title="@string/item_hd_vote"
+          android:showAsAction="never|withText" />
+	
+	<item android:id="@+id/item_hd_baoming"
+          android:title="@string/item_hd_baoming"
+          android:showAsAction="never|withText" />
+</menu>

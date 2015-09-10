@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/setting_bg" >
+   
+    <RelativeLayout 
+        android:id="@+id/rl_pl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_pinglun_height"
+        >
+         <EditText 
+		      android:id="@+id/et_pl_content"
+		      android:layout_width="match_parent"
+		      android:layout_height="@dimen/activity_pinglun_height"
+		      android:layout_marginLeft="@dimen/activity_pinglun_marginLeft" 
+		      android:layout_marginRight="@dimen/activity_pinglun_marginLeft"
+		      android:layout_marginTop="14dp"
+		      android:paddingLeft="3dp"
+		      android:textColor="#727272"
+		      android:hint="@string/tips_pl_nonull"
+		      android:gravity="top"
+		      android:textSize="16sp"
+		      android:background="@drawable/bl_edit_loc"
+		      />
+
+     	<TextView
+            android:id="@+id/tv_expression"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/expression" 
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+        
+    </RelativeLayout>
+  	<GridView
+        android:id="@+id/myGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/rl_pl_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:horizontalSpacing="@dimen/activity_pinglun_horizontalSpacing"    
+        android:gravity="center_horizontal"    
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"
+         />
+  
+  <LinearLayout android:id="@+id/ll_expression"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/chat_ll_expression_height"
+	    android:orientation="vertical"
+	    android:layout_alignParentBottom="true"
+	    android:visibility="gone"
+	    android:background="@drawable/bl_edit_loc">
+	    <android.support.v4.view.ViewPager 
+		    android:id="@+id/vp_id"
+		    android:layout_width="wrap_content"
+	        android:layout_height="@dimen/chat_vp_id_height"
+	        android:layout_marginTop="@dimen/chat_vp_marginTop"/>
+	    <LinearLayout android:id="@+id/ll_vp_selected_index"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1.0"
+	        android:gravity="center"
+	        android:orientation="horizontal">
+	    </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

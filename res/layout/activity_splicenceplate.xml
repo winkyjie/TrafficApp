@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/rg_licence_cars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rg_licence_frist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/licence_rodio_background"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/fristcar"
+            android:textColor="@drawable/licence_rodio_title_text"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rg_licence_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/licence_rodio_background"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/secondcar"
+            android:textColor="@drawable/licence_rodio_title_text"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rg_licence_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/licence_rodio_background"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/thirdcar"
+            android:textColor="@drawable/licence_rodio_title_text"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_licence_carinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_licence_cars"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_editview"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:clickable="false" >
+
+            <TextView
+                android:id="@+id/tv_licence_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/licence_no"
+                android:textColor="#727272"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlsp_licence_no"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_licence_no"
+                android:background="@drawable/my_editview"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvsp_licence_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="粤"
+                    android:textColor="@color/orange_bg"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/btsp_down_no"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/tvsp_licence_no"
+                    android:background="@drawable/pulldown" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_licence_no"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@id/rlsp_licence_no"
+                android:background="@drawable/my_editview"
+                android:enabled="false"
+                android:gravity="left|center_vertical"
+                android:hint="@string/licence_no_hint"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#727272"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:clickable="false" >
+
+            <TextView
+                android:id="@+id/tv_licence_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/licence_type"
+                android:textColor="#727272"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlsp_licence_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_licence_type"
+                android:background="@drawable/my_editview"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvsp_licence_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="小型汽车"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/btsp_down_type"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/pulldown" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="false" >
+
+            <TextView
+                android:id="@+id/tv_licence_validation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/licence_validation"
+                android:textColor="#727272"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_licence_validation"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@id/tv_licence_validation"
+                android:background="@drawable/my_editview"
+                android:enabled="false"
+                android:gravity="left|center_vertical"
+                android:hint="@string/licence_vin_hint"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#727272"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_licence_hint"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/help"
+                android:clickable="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_queryfunction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_licence_carinfo"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_querypeccancy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#ff9900"
+            android:text="违章信息查询"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_queryagency"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#ff9900"
+            android:text="代办信息查询"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_licence_driverinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_queryfunction"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_editview"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_licence_driver"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="false" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_licence_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/licenceplate_driver"
+                android:textColor="#727272"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_licence_driver"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@id/tv_licence_driver"
+                android:background="@drawable/my_editview"
+                android:enabled="false"
+                android:gravity="left|center_vertical"
+                android:hint="@string/licenceplate_driver_hint"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#727272"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_licence_archives"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="false" >
+
+            <TextView
+                android:id="@+id/tv_licence_archives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/licenceplate_archives"
+                android:textColor="#727272"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_licence_archives"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@id/tv_licence_archives"
+                android:background="@drawable/my_editview"
+                android:enabled="false"
+                android:gravity="left|center_vertical"
+                android:hint="@string/licenceplate_archives"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#727272"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_driver_infoupdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_driver_commit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="#ff9900"
+                android:text="提交"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_driver_delete"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="#ff9900"
+                android:text="删除"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/mybtn_white_gray"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/car_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_more"
+            android:gravity="center_vertical"
+            android:text="更多车主服务"
+            android:textColor="#727272"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/rightarrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

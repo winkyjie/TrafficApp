@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="18dp"
+            android:text="正在直播"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/main_title_textsize" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_ra_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="305dp"
+        android:layout_below="@id/rl_titlebar"
+        android:scaleType="fitXY" />
+
+    <ProgressBar
+        android:id="@+id/pb_ra"
+        style="@style/myProgressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDuration="700" />
+
+    <ProgressBar
+        android:id="@+id/pb_radiocurrent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="1dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_horizontal1" />
+
+    <TextView
+        android:id="@+id/tv_current_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pb_radiocurrent"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_current_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pb_radiocurrent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_current_begin"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_radio_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ra_circle" />
+
+            <RelativeLayout
+                android:id="@+id/rl_radio_hudong"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_radio_middle" >
+
+                <ImageView
+                    android:id="@+id/iv_radio_left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ra_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="节目\n表单"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_radio_replay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_radio_middle" >
+
+                <ImageView
+                    android:id="@+id/iv_radio_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ra_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="节目\n重温"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_pgname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:textColor="#fefdfd"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_djname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:textColor="#fefdfd"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/btn_radioplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/ra_play"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_ra_huanchong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

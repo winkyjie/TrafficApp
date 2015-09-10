@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/setting_bg"
+    android:gravity="center_horizontal">
+    
+    <TextView 
+        android:id="@+id/tv_user_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="恭喜你成为“够意思”畅驾用户，你可以用绑定的手机号码+密码直接登录畅驾"
+        android:textColor="@color/name_text"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="3dp"
+        android:textSize="18sp"
+        android:background="@drawable/bl_edit_loc"
+        />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请为自己设置一个“够意思”的头像和昵称吧"
+        android:textColor="@color/name_text"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="3dp"
+        android:textSize="16sp"
+        android:background="@drawable/bl_edit_loc"
+        />
+
+    <ImageView 
+        android:id="@+id/iv_user_headimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bl_zhaopian"
+        />
+    
+    <RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:background="@color/white" >
+	<TextView
+	    android:id="@+id/tv_user_nickname"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginRight="20dp"
+		android:layout_marginLeft="15dp"
+		android:layout_centerVertical="true"
+		android:text="昵称"
+		android:textSize="16sp"		
+		android:textColor="@color/name_text" />   
+	<EditText 
+	    android:id="@+id/et_user_nickname"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_toRightOf="@id/tv_user_nickname"
+	    android:textSize="16sp"
+	    android:textColor="@color/name_text"
+	    android:layout_centerVertical="true"
+	    android:gravity="center_vertical"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@color/white"
+	    android:singleLine="true"
+	    android:hint="比如：啦啦"
+	    android:textColorHint="@color/list_view_divider"
+	    />   
+ 	</RelativeLayout>
+ 	
+    <TextView 
+    	android:layout_width="fill_parent"
+    	android:layout_height="0.5dp"
+    	android:layout_marginLeft="35dp"
+    	android:layout_marginRight="35dp"
+    	android:background="@color/list_view_divider"
+        />
+    
+    <RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:background="@color/white" >
+	<TextView
+	    android:id="@+id/tv_user_sex"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginRight="20dp"
+		android:layout_marginLeft="15dp"
+		android:layout_centerVertical="true"
+		android:text="性别"
+		android:textSize="16sp"		
+		android:textColor="@color/name_text" />   
+	<TextView 
+	    android:id="@+id/et_user_sex"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_toRightOf="@id/tv_user_sex"
+	    android:textSize="16sp"
+	    android:textColor="@color/name_text"
+	    android:layout_centerVertical="true"
+	    android:gravity="center_vertical"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@color/white"
+	    android:singleLine="true"
+	    />   
+ 	</RelativeLayout>
+ 	
+    <Button 
+        android:id="@+id/btn_user_finish"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_orange2gray"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:text="完成"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

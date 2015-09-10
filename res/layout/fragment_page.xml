@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WizardPageContainer">
+
+    <TextView style="@style/WizardPageTitle" />
+
+    <ListView android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:saveEnabled="false"
+        android:scrollbarStyle="outsideOverlay" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+        <Button 
+            android:id="@+id/btn_vote_vote"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="投票"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:background="@drawable/record_selectable_background"
+            />
+        <Button 
+            android:id="@+id/btn_vote_voteresult"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="查看结果"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:background="@drawable/record_selectable_background"
+            />
+    </LinearLayout>
+</LinearLayout>

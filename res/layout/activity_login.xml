@@ -1,0 +1,229 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/et_login"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="@string/loginactivity_tips"
+        android:textColor="#727272"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_lo_login"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_listview_menu" >
+
+        <ImageView
+            android:id="@+id/iv_lo_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/lo_user" />
+
+        <EditText
+            android:id="@+id/et_lo_user"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_lo_user"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:hint="@string/mobileandmail"
+            android:singleLine="true"
+            android:textColor="#727272"
+            android:textColorHint="@color/hint_edittext"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/list_view_divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_lo_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_listview_menu" >
+
+        <ImageView
+            android:id="@+id/iv_lo_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/lo_pwd" />
+
+        <EditText
+            android:id="@+id/et_lo_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_lo_pwd"
+            android:background="#ffffff"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#727272"
+            android:textColorHint="@color/hint_edittext"
+            android:textSize="16sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_lo_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_gray2orange"
+        android:text="登     录"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_resetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:background="@color/setting_bg"
+            android:text="忘记密码？"
+            android:textColor="@color/name_text"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_lo_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/login_button_register_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_button_register_margin"
+            android:layout_marginRight="@dimen/login_button_register_margin"
+            android:background="@color/setting_bg"
+            android:text="@string/loginactivity_register"
+            android:textColor="@color/name_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/et_login"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="@string/loginactivity_oauthlogin"
+        android:textColor="#727272"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_lo_sina"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/preference_first_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_lo_sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/lo_sina"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_lo_sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_lo_sina"
+            android:text="@string/loginactivity_oauthweibo"
+            android:textColor="#727272"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="matrix"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lo_qq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_listview_menu"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_lo_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/lo_qq"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_lo_qq"
+            android:hint="@string/loginactivity_oauthqq"
+            android:textColor="#727272"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="matrix"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+</LinearLayout>

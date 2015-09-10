@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/outside" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/rl_plhud_content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_pinglun_news_height"
+            android:layout_marginLeft="@dimen/activity_pinglun_news_marginLeft"
+            android:layout_marginRight="@dimen/activity_pinglun_news_marginLeft"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/et_plhud_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_pinglun_news_height"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top"
+                android:hint="@string/tips_pl_nonull"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#727272"
+                android:textColorHint="@color/hint_edittext"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_plhud_content"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/myGrid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_share"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:gravity="center_vertical" >
+
+                <CheckBox
+                    android:id="@+id/cb_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="同步并置顶到车友分享"
+                    android:textColor="@color/hint_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/setting_bg" >
+
+                <TextView
+                    android:id="@+id/tv_expression"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/expression" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:text="发送"
+                    android:textColor="@color/name_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/list_view_divider" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_expression"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/chat_ll_expression_height"
+            android:layout_below="@id/ll_grid"
+            android:background="@color/setting_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chat_vp_id_height" />
+
+            <LinearLayout
+                android:id="@+id/ll_vp_selected_index"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

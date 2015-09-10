@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/item_news_pingluncontent"
+          android:title="@string/item_pingluncontent"
+          android:showAsAction="always|withText" />
+    
+	<item android:id="@+id/item_news_sentpinglun"
+          android:title="@string/item_sentpinglun"
+          android:showAsAction="always|withText" />
+
+	<item android:id="@+id/item_news_shareweibo"
+          android:title="@string/item_shareweibo"
+          android:showAsAction="never|withText"
+          android:visible="false" />
+	
+</menu>

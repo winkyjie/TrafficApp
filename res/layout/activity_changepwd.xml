@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/setting_bg" >
+    
+ <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:text="需要修改密码的畅驾账号"
+    android:paddingLeft="5dp"
+    android:textSize="14sp"
+    android:background="@drawable/et_login"
+    android:gravity="center_vertical"
+    android:textColor="#727272"
+    />
+ 
+	<RelativeLayout 
+	    android:id="@+id/rl_cha_login"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+        android:background="@drawable/bg_listview_menu">
+
+		<EditText
+		    android:id="@+id/et_cha_user"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:background="#ffffff"
+		    android:ems="10"
+		    android:enabled="false"
+		    android:gravity="center_vertical"
+		    android:paddingLeft="15dp"
+		    android:singleLine="true"
+		    android:textColor="#727272"
+		    android:textSize="16sp" >
+		</EditText>
+
+	</RelativeLayout>
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.5dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@color/list_view_divider"
+	    />
+	<RelativeLayout 
+	    android:id="@+id/rl_cha_oldpwd"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+        android:background="@drawable/bg_listview_menu">
+		
+		<EditText
+		    android:id="@+id/et_cha_oldpwd" 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:textColorHint="@color/hint_edittext"
+		    android:layout_marginTop="5dp"
+			android:layout_marginBottom="4dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="15dp"
+			android:gravity="center_vertical"
+		    android:textSize="16sp"
+		    android:textColor="#727272"
+		    android:hint="旧密码"
+		    android:background="#ffffff"
+		    android:inputType="textPassword"
+			android:singleLine="true"
+		    />
+	</RelativeLayout>
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.5dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@color/list_view_divider"
+	    />
+	<RelativeLayout 
+	    android:id="@+id/rl_cha_newpwd"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+        android:background="@drawable/bg_listview_menu">
+		
+		<EditText
+		    android:id="@+id/et_cha_newpwd" 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:textColorHint="@color/hint_edittext"
+		    android:layout_marginTop="5dp"
+			android:layout_marginBottom="4dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="15dp"
+			android:gravity="center_vertical"
+		    android:textSize="16sp"
+		    android:textColor="#727272"
+		    android:hint="6-12位新密码"
+		    android:inputType="textPassword"
+		    android:background="#ffffff"
+			android:singleLine="true"
+		    />
+	</RelativeLayout>
+
+	   <ImageView 
+		    android:id="@+id/btn_cha_submit"
+		    android:layout_marginTop="14dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/btn_req_submit"
+		    android:layout_gravity="right"
+		    android:layout_marginRight="15dp"
+	    /> 
+
+</LinearLayout>

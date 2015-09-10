@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.fszt.trafficapp.widget.PullDownView
+        android:id="@+id/pd_space_carlife"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/pb_space_carlife"
+        style="@style/myProgressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDuration="700" />
+
+	<ImageView 
+	    android:id="@+id/iv_input"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/iv_input"
+	    android:layout_alignParentBottom="true"
+	    />
+</RelativeLayout>

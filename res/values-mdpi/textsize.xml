@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ViewFlow_height">70dp</dimen>
+    <dimen name="main_marginTop">20dp</dimen>
+    <dimen name="main_item_textsize">15sp</dimen>
+    <dimen name="main_title_textsize">20sp</dimen>
+    <dimen name="main_title_marginTop">30dp</dimen>
+    <dimen name="main_title_marginBottom">20dp</dimen>
+    <dimen name="item_newmain_marginTop">5dp</dimen>
+    <dimen name="newmain_gridview_horizontalSpacing">20dp</dimen>
+    <dimen name="newmain_gridview_verticalSpacing">15dp</dimen>
+    <dimen name="newmain_main_gridview_verticalSpacing">20dp</dimen>
+    
+    <dimen name="login_button_register_height">45dp</dimen>
+    <dimen name="login_button_register_margin">35dp</dimen>
+    
+    <dimen name="item_huodong_top_height">140dp</dimen>
+    <dimen name="item_pnews_height">230dp</dimen>
+    
+    <dimen name="activity_about_textSize">18sp</dimen>
+    <dimen name="activity_about_marginLeft">35dp</dimen>
+    <dimen name="activity_about_marginTop">45dp</dimen>
+    
+    <dimen name="listview_photo_size">55dp</dimen>
+</resources>

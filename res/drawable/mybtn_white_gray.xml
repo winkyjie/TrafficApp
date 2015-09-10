@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <!-- 按钮单击时触发 -->
+    <item android:state_pressed="true"> 
+        <shape> 
+            <!-- 中间部分 -->
+            <solid android:color="#cccccc" />
+            <!-- 边框 -->
+            <stroke android:width="1dip" android:color="#ffffff" /> 
+            <!-- 设置按钮角度 
+            <corners android:radius="2dp" /> -->
+            <!-- 设置按钮边间距 --><!-- 
+            <padding android:left="15dp" android:top="10dp" 
+                android:right="10dp" android:bottom="10dp" />  -->
+        </shape> 
+    </item> 
+  	<!-- 按钮获得焦点触发 -->
+    <item android:state_focused="true"> 
+        <shape>
+            <solid android:color="#cccccc" />
+            <stroke android:width="1dip" android:color="#ffffff" /> 
+        </shape> 
+    </item> 
+  	<!-- 初始显示 -->
+    <item> 
+        <shape> 
+            <solid android:color="#ffffff" />
+            <stroke android:width="1dip" android:color="#cccccc" /> 
+            
+        </shape> 
+    </item> 
+</selector> 
+
+<!-- 控件颜色 startColor 到 endColor渐变-->
+<!-- 
+	<gradient android:startColor="#000000" android:endColor="#ffffff" 
+                android:angle="180" /> 
+                <padding android:left="15dp" android:top="10dp" 
+                android:right="10dp" android:bottom="10dp" /> 
+ -->

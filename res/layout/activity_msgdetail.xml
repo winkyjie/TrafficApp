@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:layout_marginTop="45dp"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_msg_back"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/et_login"
+        >
+        <LinearLayout 
+            android:id="@+id/ll_msg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/arrow_down"
+	        	android:layout_marginLeft="10dp"
+	            />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="返回"
+	            android:textSize="17sp"
+	            android:layout_marginLeft="5dp"
+	            android:textColor="@color/name_text"
+	            />
+        </LinearLayout>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通知详情"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/name_text"
+            />
+    </RelativeLayout>
+    
+    <TextView
+       android:id="@+id/tv_msg_title" 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="15dp"
+       android:layout_marginRight="15dp"
+       android:layout_below="@id/rl_msg_back"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:textIsSelectable="true"
+       android:textColor="#000000"
+       />
+
+   <TextView 
+       android:id="@+id/tv_msg_date"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/tv_msg_title"
+       android:layout_marginTop="13dp"
+       android:layout_marginLeft="25dp"
+       android:textSize="12sp"
+       android:textColor="@color/gray_light"
+       />
+
+   <TextView 
+       android:id="@+id/tv_msg_content"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/tv_msg_date"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:textSize="16sp"
+       android:textColor="@color/name_text"
+       android:textIsSelectable="true"
+       android:lineSpacingExtra="5dp"
+       />
+</RelativeLayout>

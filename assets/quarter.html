@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="target-densitydpi=device-xdpi, width=device-width, height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript">
+	var color_y1 = "#4572A7";
+	var color_y2 = "#89A54E";
+	var title1 = "$title1";
+	var xCategories = $xCategories;
+	var series1 = $series1;
+	var w = $w;
+	var h = $h;
+	var showLabels = $showLabels;
+
+	function init() {
+		$("#container1").height(h);
+		$("#container1").width(w);
+
+		$('#container1').highcharts({
+			chart : {
+				borderWidth : 0,
+				plotBorderWidth : 0,
+				type : 'bar',
+				spacingBottom : 15,
+				spacingLeft : 0,
+				spacingRight : 0,
+				spacingTop : 10
+			},
+			credits : {
+				enabled : false
+			},
+			exporting : {
+				enabled : false
+			},
+			title : {
+				text : ''
+			},
+			plotOptions: {
+	            series: {
+	                pointWidth: 25,
+	                dataLabels: {
+                   		enabled: showLabels
+                	}
+	            }
+        	},
+			xAxis : {
+				categories : xCategories,
+				labels: {
+                useHTML:true,
+                step:1,
+                formatter: function() {
+                    return '<div align="center" style="word-wrap:break-word;white-space:normal;width:100px">' + this.value + '</div>';
+                }
+            }
+			},
+			yAxis : {
+				labels : {
+					style : {
+						color : color_y1
+					},
+					enabled : showLabels
+				},
+				title : {
+					text : ''
+				}
+			},
+			tooltip : {
+				enabled : false
+			},
+			series : series1
+		});
+	}
+</script>
+
+</head>
+
+<body onload="init()">
+	<script type="text/javascript" src="file:///android_asset/jquery.min.js"></script>
+	<script type="text/javascript" src="file:///android_asset/highcharts.js"></script>
+	<script type="text/javascript" src="file:///android_asset/exporting.js"></script>
+
+	<div id="container1"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/bg_list_news"
+    >
+    
+ <ImageView 
+    android:id="@+id/iv_cnews"
+    android:layout_width="55dp"
+    android:layout_height="55dp"
+	android:layout_marginLeft="@dimen/item_cnews_marginLeft"
+	android:layout_marginRight="10dp"
+	android:layout_marginTop="@dimen/item_cnews_marginTop"
+	android:layout_marginBottom="12dp"
+	android:layout_centerVertical="true"
+    android:scaleType="centerCrop"
+    />
+ <TextView 
+    android:id="@+id/tv_cnews"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/iv_cnews"
+	android:paddingTop="8dp"
+	android:paddingBottom="8dp"
+    android:textSize="@dimen/item_cnews_textSize" 
+    android:lineSpacingExtra="@dimen/item_cnews_lineSpacingExtra"
+    android:typeface="serif"
+    android:textColor="@color/name_text"/>
+
+ <TextView 
+    android:id="@+id/tv_cnews_createtime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_alignParentRight="true"
+    android:textSize="12sp"
+    android:textColor="#0000FF"
+    android:visibility="gone"
+    />
+
+
+</RelativeLayout>

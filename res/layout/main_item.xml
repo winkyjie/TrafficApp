@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_listview_text"
+     >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/item_huodong_list_marginBottom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/item_huodong_list_marginTop"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/typename"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/image"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/item_huodong_list_lineSpacingExtra"
+        android:singleLine="true"
+        android:paddingTop="@dimen/item_huodong_list_paddingTop"
+        android:textColor="@color/name_text"
+        android:textSize="@dimen/item_huodong_list_textSize"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/typedesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/image"
+        android:paddingBottom="5dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/gray_light"
+        android:textSize="12sp" />
+</RelativeLayout>

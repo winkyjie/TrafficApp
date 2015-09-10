@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.fszt.trafficapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebar" >
+
+        <ImageView
+            android:id="@+id/iv_main_me"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_main_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/new_message" />
+
+            <ImageView
+                android:id="@+id/iv_circle"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/circle" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="18dp"
+            android:text="我的畅驾"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/main_title_textsize" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_viewflow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_huodong_top_height" >
+
+                <cn.fszt.trafficapp.widget.viewflow.ViewFlow
+                    android:id="@+id/viewflow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:gravity="right"
+                    android:padding="2dip"
+                    android:visibility="visible" >
+                    
+                    <cn.fszt.trafficapp.widget.viewflow.CircleFlowIndicator
+                        android:id="@+id/viewflowindic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:paddingRight="5dp"
+                        app:activeColor="@color/orange_bg"
+                        app:activeType="fill"
+                        app:circleSeparation="8dp"
+                        app:inactiveColor="#e3e3e3"
+                        app:inactiveType="fill"
+                        app:radius="2dip"
+                         />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_weather"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans_white"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="3dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <cn.fszt.trafficapp.widget.MyGridView2
+                android:id="@+id/gv_main"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:horizontalSpacing="@dimen/newmain_gridview_horizontalSpacing"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:background="@color/white"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/newmain_main_gridview_verticalSpacing" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="@color/setting_bg" />
+            
+            <cn.fszt.trafficapp.widget.MyListview
+                android:id="@+id/newmain_hot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <cn.fszt.trafficapp.widget.MyGridView2
+                android:id="@+id/gv_adlist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_bg"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="@dimen/newmain_gridview_horizontalSpacing"
+                android:numColumns="2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/newmain_gridview_verticalSpacing" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/iv_huodong"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_huodong_top_height"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_title"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="10dp"
+                android:background="@drawable/look" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_hd_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/item_huodong_top_lineSpacingExtra"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_huodong"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_count"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/item_huodong_top_lineSpacingExtra"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_huodong_top_textSize" />
+    </RelativeLayout>
+
+</RelativeLayout>

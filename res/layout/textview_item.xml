@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="@dimen/item_huodong_top_height"
+	>
+		
+		<ImageView
+			android:id="@+id/iv_main"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/item_huodong_top_height"
+			android:scaleType="fitXY"
+			/>       
+       <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="@dimen/item_huodong_top_padding"
+	        android:layout_alignParentBottom="true"
+	        android:gravity="center"
+	        android:background="@color/trans_title">
+        <TextView 
+            android:id="@+id/texView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_huodong_top_textSize"
+            android:lineSpacingExtra="@dimen/item_huodong_top_lineSpacingExtra"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+       </LinearLayout>
+</RelativeLayout>

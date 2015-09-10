@@ -1,0 +1,220 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+
+        <!--
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        -->
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:actionMenuTextColor">#FFFFFF</item>
+        <item name="android:selectableItemBackground">@drawable/ad_selectable_background</item>
+        <item name="android:homeAsUpIndicator">@drawable/leftarrow</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyTheme.ActionBar.Overflow</item>
+    </style>
+
+    <style name="MyTheme.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+
+        <!-- useLogo：坐标的小箭头；showHome：中间的图标，默认使用app的icon；showTitle：要不要显示标题，默认标题就是app的名称 -->
+        <item name="android:displayOptions">useLogo|showTitle</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.Overflow" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/btn_item_overflow</item>
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ItemStyle">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="main_window_title_background">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="main_title">
+        <item name="android:windowTitleSize">45dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/main_window_title_background</item>
+    </style>
+
+    <style name="custom_window_title_background">
+        <item name="android:background">#E75735</item>
+    </style>
+
+    <style name="custom_title">
+        <item name="android:windowTitleSize">42dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/custom_window_title_background</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="Button">
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:textColor">@color/btn_text</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 窗口的动画样式 -->
+        <item name="android:windowAnimationStyle">@style/DialogAnim</item>
+        <!-- 不要标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 整个对话框窗口的背景 -->
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
+
+    <!-- 对话框窗口的动画样式 -->
+    <style name="DialogAnim">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="DialogStyleBottom" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="LogoutDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- 按住录音 喇叭弹出窗口样式 -->
+    <style name="like_toast_dialog_style">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/round_background</item>
+    </style>
+
+    <style name="ImageloadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="AnimHead" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/head_in</item>
+        <item name="android:windowExitAnimation">@anim/head_out</item>
+    </style>
+    <!-- 显示大图片 -->
+    <style name="ImageScale" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimHead</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 设置全屏显示 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="WizardPageContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WizardPageTitle">
+        <item name="android:id">@android:id/title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">18dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="WizardFormLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/name_text</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <style name="myProgressBarStyleLarge">
+
+
+	　　                <item name="android:indeterminateDrawable">@drawable/progress_large_style</item>
+
+
+	　　                <item name="android:minWidth">20dp</item>
+
+
+	　　                <item name="android:maxWidth">20dp</item>
+
+
+	　　                <item name="android:minHeight">20dp</item>
+
+
+	　　                <item name="android:maxHeight">20dp</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+</resources>

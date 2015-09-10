@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_reh_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_reh_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="155dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_reh_head"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="21dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/iv_reh_bhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_reh_head"
+        android:background="@drawable/ra_bhead" />
+
+    <TextView
+        android:id="@+id/tv_reh_pgname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_reh_bhead"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_reh_djname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reh_pgname"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_reh_bhead"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/name_text"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/push_btn_reh"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_reh_djname"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/iv_reh_head"
+        android:background="#ff9900" >
+
+        <Button
+            android:id="@+id/btn_reh_secret"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="#ff9900" 
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/btn_reh_secret"
+            android:background="@drawable/circle"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_reh_essence"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_reh_djname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/push_btn_reh"
+        android:background="#ff9900"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

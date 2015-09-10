@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/item_map_loc"
+          android:title="@string/item_loc"
+          android:icon="@drawable/btn_item_loc"
+          android:showAsAction="always" />
+    
+	<item android:id="@+id/item_map_baoliao"
+          android:title="@string/item_baoliao"
+          android:showAsAction="always|withText" 
+          android:visible="false"/>
+	
+	<item android:id="@+id/item_map_text"
+          android:title="@string/item_text"
+          android:showAsAction="always|withText" 
+          android:visible="false"/>
+	
+	<item android:id="@+id/item_map_roadinfoimage"
+          android:title="@string/item_roadinfoimage"
+          android:showAsAction="never|withText" 
+          android:visible="false"/>
+	
+</menu>

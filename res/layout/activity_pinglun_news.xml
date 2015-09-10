@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/setting_bg" >
+   
+    <RelativeLayout 
+        android:id="@+id/rl_plnews_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_pinglun_news_height"
+        >
+	     <EditText 
+		      android:id="@+id/et_plnews_content"
+		      android:layout_width="match_parent"
+		      android:layout_height="@dimen/activity_pinglun_news_height"
+		      android:layout_marginLeft="@dimen/activity_pinglun_news_marginLeft" 
+		      android:layout_marginRight="@dimen/activity_pinglun_news_marginLeft"
+		      android:layout_marginTop="14dp"
+		      android:paddingLeft="3dp"
+		      android:textColor="#727272"
+		      android:hint="@string/tips_pl_nonull"
+		      android:gravity="top"
+		      android:textSize="16sp"
+		      android:background="@drawable/bl_edit_loc"
+	      />
+     <TextView
+            android:id="@+id/tv_expression"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/expression" 
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_pinglun_news_marginLeft"/>
+	</RelativeLayout>
+ 	 <GridView
+        android:id="@+id/myGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/rl_plnews_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:horizontalSpacing="5dp"    
+        android:gravity="center_horizontal"    
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"
+         />
+
+</RelativeLayout>

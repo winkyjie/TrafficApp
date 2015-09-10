@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/setting_bg">
+
+     
+    <cn.fszt.trafficapp.widget.PullDownView
+        android:id="@+id/pd_hditem_pl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+	<ProgressBar 
+        android:id="@+id/pb_hditem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/myProgressBarStyleLarge"
+        android:indeterminateDuration="700"
+        />
+     
+</RelativeLayout>

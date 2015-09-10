@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg">
+    
+    <ProgressBar 
+        android:id="@+id/pb_trafficinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/myProgressBarStyleLarge"
+        android:indeterminateDuration="700"
+        />
+	<ScrollView 
+    	android:layout_width="fill_parent"		
+    	android:layout_height="fill_parent"
+    	>
+    <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="15dp">
+    <TextView 
+        android:id="@+id/tv_trafficinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:autoLink="web"
+        android:textColor="@color/name_text"
+    	android:lineSpacingExtra="4dp"
+    	android:typeface="serif"
+    	android:textIsSelectable="true"/>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

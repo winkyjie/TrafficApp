@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg"
+    android:orientation="vertical" >
+
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"      
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:horizontalSpacing="8dp"
+            android:numColumns="3"
+            android:scrollbars="vertical"
+            android:verticalSpacing="8dp" >
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp" 
+                android:background="#ff495a"
+                />
+
+            <Button
+                android:id="@+id/bt" 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bt_nobgd"
+                android:textColor="#ff495a"
+                android:textSize="20sp"
+                android:text="完成" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

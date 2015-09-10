@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_listview_text" >
+
+    <ImageView
+        android:id="@+id/iv_bgpl_headimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp" />
+
+    <ImageView
+        android:id="@+id/iv_bgpl_dj"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="38dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_bgpl_headimg" >
+
+        <TextView
+            android:id="@+id/tv_bgpl_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/orange_bg"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_bgpl_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bgpl_nickname"
+            android:layout_marginBottom="5dp"
+            android:autoLink="all"
+            android:lineSpacingExtra="1dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/name_text"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bgdetail_createtime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bgpl_content" >
+
+            <TextView
+                android:id="@+id/tv_bgdetail_createtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray_light"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_bgdetail_deldetail"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/tv_bgdetail_createtime"
+                android:background="@color/setting_bg"
+                android:focusable="false"
+                android:text="@string/delete"
+                android:textColor="@color/gray_light"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_bg_comment"
+                android:layout_width="13dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_comment" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/rl_bgdetail_createtime" />
+    </RelativeLayout>
+
+</RelativeLayout>
